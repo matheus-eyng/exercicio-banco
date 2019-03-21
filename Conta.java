@@ -6,12 +6,16 @@ public class Conta {
     protected double saldoConta;
     protected double limiteDeSaque;
     protected ArrayList<Movimentacao> listaMovimentos;
+    protected Cliente cliente;
+    protected Agencia agencia;
     
-    public Conta (String numero, double saldo, double limite) {
+    public Conta (String numero, double saldo, double limite, Cliente cliente, Agencia agencia) {
         this.numeroConta = numero;
         this.saldoConta = saldo;
         this.limiteDeSaque = limite;
         listaMovimentos = new ArrayList<Movimentacao>();
+	this.agencia = agencia;
+	this.cliente = cliente;
     }
 
     public double retornaSaldo() {

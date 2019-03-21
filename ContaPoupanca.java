@@ -4,8 +4,8 @@ public class ContaPoupanca extends Conta{
     protected int variacao;
     protected int rendimentoMensal;
 
-    public ContaPoupanca(String numero, double saldo, double limite, int variacao, int rendimentoMensal) {
-        super(numero, saldo, limite);
+    public ContaPoupanca(String numero, double saldo, double limite, int variacao, int rendimentoMensal, Cliente cliente, Agencia agencia) {
+        super(numero, saldo, limite, cliente, agencia);
         this.variacao = variacao;
         this.rendimentoMensal = rendimentoMensal;
     }
