@@ -52,15 +52,10 @@ public class Banco {
 
     }
     
-    public void imprimeComprovante(String conta) {
-        for (int i = 0; i < numeroContas; i++) {
-            Conta contaReferenciada = listaContas.get(i);
-
-            if (contaReferenciada.retornaNumeroConta() == conta) {
-                
-            }
+    public ArrayList getComprovante(String conta) {
+        if (contaReferenciada.retornaNumeroConta() == conta) {
+            return contaReferenciada.getComprovantes();
         }
-
     }
 
 }
