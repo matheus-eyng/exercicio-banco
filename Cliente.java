@@ -1,19 +1,42 @@
-public class Cliente{
+import java.util.ArrayList;
+
+public class Agencia{
+  protected int numero;
   protected String nome;
-  protected String endereo;
-  protected int telefone;
-  protected String email;
-  protected ArrayList<Contas> listaContasC;
-  protected static int numeroContasC;
+  protected String endereco;
+  protected ArrayList<Clientes> listaClientesA;
+  protected ArrayList<Conta> listaContasA;
   
-  public class Cliente(String nome, String endereco, int telefone, String email){
-  listaContasC = new ArrayList<Conta>();
-  this.nome = nome;
-  this.endereco = endereco;
-  this.telefone = telefone;
-  this.email = email;
-  this.numeroContasC = 0;
-  
-  
+  public Agencia(int numero, String nome, String endereco){
+     listaContasA = new ArrayList<Conta>();
+     listaClientes = new ArrayList<Cliente>();
+     this.numero = numero;
+     this.nome = nome;
+     this.endereco = endereco;
   }
+
+  public int getNumero() {
+    return this.numero;
+  }
+
+  public String getEnderco() {
+    return this.endereco;
+  }
+
+  public ArrayList getClientes() {
+    return this.listaClientesA;
+  }
+
+  public ArrayList getContas() {
+    return this.listaContasA;
+  }
+
+  public void adicionarCliente(Clientes cliente) {
+    listaClientesA.add(cliente);
+  }
+
+  public void adicionarConta(Conta conta) {
+    listaContasA.add(conta);
+  }
+
 }
