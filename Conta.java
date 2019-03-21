@@ -37,7 +37,5 @@ public class Conta {
     public void adicionaMovimentacao(Movimentacao movimento) {
         listaMovimentos.add(movimento);
     }
-
-    
 }
 	
