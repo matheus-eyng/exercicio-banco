@@ -6,7 +6,6 @@ public class ContaCorrente extends Conta{
 
     public ContaCorrente (String numero, double saldo, double limite, double saldoConta, double limiteCheque, boolean usandoCheque) {
         super(numero, saldo, limite);
-        this.saldoConta = saldoConta;
         this.limiteChequeEspecial = limiteCheque;
         this.usandoChequeEspecial = usandoCheque;
 
